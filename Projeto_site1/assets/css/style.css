@@ -16,16 +16,17 @@
     height: 10rem;
     font-style: italic;
     font-weight: 600;
+    color: #0ab47b;
 }
 
 
-/*section1*/
+/*-----------------section1-----------------*/
 
 #secao1 {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 20%;
+    height: 30%;
 
 }
 
@@ -34,20 +35,14 @@
 #container_imc {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 70%;
     height: 85vh;
-    gap: 3.5rem;
-    padding: 1rem;
+    gap: 0.8rem;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(74, 206, 246, 1) 0%, rgba(96, 178, 246, 1) 38%, rgba(0, 212, 255, 1) 100%);
-    border: #21db56 solid;
 }
 
-/*iamgem*/
-#img img {
-    width: 40rem;
-}
 
 /*calculadora*/
 #calc_imc {
@@ -55,7 +50,7 @@
     flex-direction: column;
     position: relative;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     color: #f8fafc;
     background-color: rgba(157, 221, 246, 0.736);
     border-radius: 8px;
@@ -70,12 +65,12 @@
 
 /*título*/
 .titulo {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 /*label*/
 .input-box label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -93,7 +88,7 @@
 .icones span,
 .icones i {
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.6rem 1rem
 }
 
@@ -119,7 +114,7 @@
 /*botão*/
 #calcular {
     border: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     background-color: rgba(185, 193, 193, 0.688);
     color: rgba(255, 255, 255, 255);
@@ -189,6 +184,184 @@
 
 /*sliders*/
 #sliders {
-    border: #020303 solid;
-    width: 100%;
+    width: 50%;
     height: 85vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(74, 206, 246, 1) 0%, rgba(96, 178, 246, 1) 38%, rgba(0, 212, 255, 1) 100%);
+}
+
+#sliders span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f8fafc;
+}
+
+/*-----------------section2-----------------*/
+
+#secao2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+
+#secao2 h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #0ab47b;
+}
+
+.cards_info1,
+.cards_info2 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+/*-----------------section3-----------------*/
+
+
+/*-----------------Footer-----------------*/
+
+.rodape {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.footer_left {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.footer_left a {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10px;
+    font-style: italic;
+    text-decoration: none;
+    color: #8a5cc2;
+}
+
+.footer_left a:hover {
+    color: #0ab47b;
+    cursor: pointer;
+}
+
+.footer_rigth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    /*garantir que a imagem de plano de fundo usada cubra totalmente o elemeto no qual foi aplicado*/
+    background-image: url(../img/home/others/help_desk2.jpg);
+}
+
+/*BOX mensagem*/
+.contact-form {
+    max-width: 700px;
+    margin-right: 50px;
+    /*maneira abreviada de definir flex-grow, flex-shrink e flex-basis, faz com que o item se torne flexível para preencher todo o espaço diponível do contẽnier*/
+    flex: 1;
+}
+
+
+
+
+.contact-form h2 {
+    color: #0ab47b;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.contact-form .text-box {
+    background: #8a5cc2;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* transparência 0 - completamente transparente e 1 totamente opaco*/
+    opacity: 0.9;
+
+}
+
+.contact-form .text-box:first-child {
+    /*ordenar como primeiro filho do elemento pai*/
+    margin-right: 15px;
+}
+
+.contact-form textarea {
+    /* área (box) mensagem*/
+    background: #8a5cc2;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    /*especifica que um elemento pode ser redimensionado verticalmente pelo usuário.*/
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .enviar-btn {
+    /*Movimentação do elemento para a direita*/
+    float: right;
+    background: #8a5cc2;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.contact-form .enviar-btn:hover {
+    background: #0ab47b;
+    cursor: pointer;
+}
